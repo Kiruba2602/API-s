@@ -20,7 +20,7 @@ from faker import Faker
 fake = Faker()
 
 def create_fake_menu_items():
-    for _ in range(100):
+    for _ in range(30):
         title = fake.word(ext_word_list=['Burger', 'Pizza', 'Pasta', 'Salad', 'Sushi', 'Tacos'])
         price = round(fake.random_number(digits=4) / 100, 2)
         inventory = fake.random_int(min=1, max=100)
